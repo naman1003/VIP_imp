@@ -1,0 +1,21 @@
+import random
+stop_timer(0)
+
+
+j= 4
+
+while(j<=8):
+	x = Array(j, sint)
+	y = Array(j, sint)
+
+	
+	@for_range_parallel(j, j)
+	def _(i):
+		x[i] = sint.get_random()
+		y[i] = sint.get_random()
+
+		
+	start_timer(0)
+	z= sint.dot_product(x,y)
+	stop_timer(0)
+	j = j+4
